@@ -2,39 +2,129 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title> Personal Site </title>
+    <title> SWilD</title>
   </head>
-    <link href="assets/personal_site_styles.css" type="text/css"
+    <link href="assets/css/bootstrap.min.css" type="text/css"
+    rel="stylesheet"/>
+    <link href="assets/css/bootstrap.css" type="text/css"
+    rel="stylesheet"/>
+    <link href="assets/css/modern_business.css" type="text/css"
     rel="stylesheet"/>
   <body>
-    <header>
-      <h1>
-        Welcome to my personal site!
-      </h1>
-      <h3>
-        <a href="links/all_about_me.html">
-           All About Me
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="personal_site.html">W/D</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="links/about.html">About Wil</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Turing Blog & Reflections <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href=".html">1 Column 1</a>
+              </li>
+              <li>
+                <a href=".html">2 Column 2</a>
+              </li>
+              <li>
+                <a href=".html">3 Column 3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="posts/mod_1_reflections.html">Blog Post</a>
+                </li>
+                <li>
+                  <a href=".html"> 2</a>
+                </li>
+                  <li>
+                    <a href="posts/mod_1_reflections.html">Blog Post</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href=".html">Portfolio</a>
+                  </li>
+                  <li>
+                    <a href=".html">Contact</a>
+                  </li>
+                  <li>
+                    <a href="faq.html">FAQ</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+     <!-- /.navbar-collapse -->
+   </div>
+     <!-- /.container -->
+   </nav>
+      <header id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="fill" style="background-image:url('http://www.rossyoung.com/standingtall.jpg');"></div>
+            <div class="carousel-caption">
+                <h2>Caption 1</h2>
+            </div>
+        </div>
+        <div class="item">
+            <div class="fill" style="background-image:url('https://s-media-cache-ak0.pinimg.com/736x/8b/2f/ce/8b2fce597bb41f48e81f600b998379d8--nebraska-cornhuskers-nebraska-football.jpg');"></div>
+            <div class="carousel-caption">
+                <h2>Caption 2</h2>
+            </div>
+        </div>
+        <div class="item">
+            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+            <div class="carousel-caption">
+                <h2>Caption 3</h2>
+            </div>
+        </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
         </a>
-      </h3>
-      <h5>
-        <a class="brand" href="links/brand.html">
-          -W/D-
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
         </a>
-        <a href="./posts/mod_1_reflections.html">
-          -Mod-1 Reflections-
-        </a>
-        <a> -Mod-2 Outlook- </a>
-        <a> Resume´</a>
-      </h5>
     </header>
+    <div class="row">
+      <div class="col-lg-12">
+          <h1 class="page-header">
+              Welcome to Wil Donovan's Personal Site
+          </h1>
+      </div>
+    </div>
+    <script src="js/jquery.js"></script>
 
-    <p class="last_message">
-      Enjoy big changes soon to come!!!
-    </p>
-    <footer>
-      <p class="version">
-        version 0.1
-      </p>
-    </footer>
+       <!-- Bootstrap Core JavaScript -->
+       <script src="js/bootstrap.min.js"></script>
+
+       <!-- Script to Activate the Carousel -->
+       <script>
+       $('.carousel').carousel({
+           interval: 5000 //changes the speed
+       })
+       </script>
   </body>
 <html>
